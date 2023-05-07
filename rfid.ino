@@ -88,7 +88,7 @@ void setup() {
         }
         Serial.println(x);
       }
-      Serial.println(F("EEPROM Successfully Wiped"));
+      Serial.println(F("EEPROM Successfully Erased"));
       digitalWrite(greenLed, LED_OFF);
       tone(Buzzer, 2400, 400); 
       delay(200);
@@ -169,7 +169,7 @@ void loop () {
       digitalWrite(whiteLed, LED_OFF); 
       
       // Give some feedback 
-      Serial.println(F("Wipe Button Pressed"));
+      Serial.println(F("Erase Button Pressed"));
       tone(Buzzer, 2400, 400); 
       delay(200);
       noTone(Buzzer);
